@@ -69,6 +69,7 @@ export const gitwizCli = (args) => {
         if (complete) {
           successLogger(`All done 🔥`);
         }
+        successLogger(`All done 🔥`);
       } catch (error) {
         if (error) {
           switch (error.status) {
