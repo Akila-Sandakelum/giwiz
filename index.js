@@ -66,9 +66,9 @@ export const gitwizCli = (args) => {
         const url = await repo.createRemoteRepository();
         await repo.createGitIgnoreFile();
         const complete = await repo.setUpRepository(url, "origin", "master");
-        if (complete) {
-          successLogger(`All done 🔥`);
-        }
+        // if (complete) {
+        //   successLogger(`All done 🔥`);
+        // }
         successLogger(`All done 🔥`);
       } catch (error) {
         if (error) {
