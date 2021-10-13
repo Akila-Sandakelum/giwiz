@@ -1,0 +1,55 @@
+{
+  "name": "gitwiz",
+  "version": "1.0.0",
+  "description": "A Node CLI to automate your Github repository creation flow",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "@akila_sandakelum/gitwiz": "bin/gitwiz-cli.js",
+    "gitwiz": "bin/gitwiz-cli.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gitwiz",
+    "cli",
+    "create-git-repository",
+    "node"
+  ],
+  "author": "Akila Sandakelum",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/auth-token": "^2.5.0",
+    "@octokit/rest": "^18.10.0",
+    "boxen": "^5.1.2",
+    "chalk": "^4.1.2",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "commander": "^8.2.0",
+    "configstore": "^6.0.0",
+    "ejs": "^3.1.6",
+    "emojic": "^1.1.16",
+    "esm": "^3.2.25",
+    "figlet": "^1.5.2",
+    "inquirer": "^8.1.5",
+    "inquirer-autocomplete-prompt": "^1.4.0",
+    "load-json-file": "^7.0.1",
+    "lodash": "^4.17.21",
+    "log-symbols": "^5.0.0",
+    "minimist": "^1.2.5",
+    "node-emoji": "^1.11.0",
+    "octokit": "^1.5.0",
+    "ora": "^6.0.1",
+    "simple-git": "^2.45.1",
+    "touch": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=14.17.0",
+    "npm": ">=7.24.1"
+  }
+}
