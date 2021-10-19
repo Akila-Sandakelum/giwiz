@@ -29,7 +29,7 @@ export const gitwizCli = (args) => {
 
   gitwiz
     .command("authenticate")
-    .alias("-auth")
+    .alias("auth")
     .description("Set up Github authentication")
     .action(async () => {
       let token = getGithubTokenFromStore();
